@@ -61,25 +61,26 @@
 <ul class='inputs-list unstyled'>
   <li>
     <label class='checkbox inline'>
-      <input type='checkbox' id='121' />
+      <input type='checkbox' id='cbType1' />
       <span class='filter-box filter-blue'></span>
       City drop-off location
     </label>
   </li>
   <li>
     <label class='checkbox inline'>
-      <input type='checkbox' id='212' />
+      <input type='checkbox' id='cbType2' />
       <span class='filter-box filter-green'></span>
       Private business
     </label>
   </li>
   <li>
     <label class='checkbox inline'>
-      <input type='checkbox' id='311' />
+      <input type='checkbox' id='cbType3' />
       <span class='filter-box filter-red'></span>
       Hazardous materials
     </label>
   </li>
+
 </ul>
        
             <br />
@@ -124,13 +125,13 @@
         }).resize();
         
         $(function() {
-          var myMap = new MapsLib({
-            fusionTableId:      "1X5Negi9fOxI_N9ojSuIxG-pC9rSDIyC1kl1IjcYQ",
-            googleApiKey:       "AIzaSyCeRB9yBJrjGvzQTQ3vFBXuMVS9jsPcsso",
-            locationColumn:     "geometry",
-            map_center:         [-19.867716569552933, -39.76522666290339],
-            locationScope:      "vitória"
-          });
+ var myMap = new MapsLib({
+ fusionTableId:"1m4Ez9xyTGfY2CU6O-UgEcPzlS0rnzLU93e4Faa0",
+ googleApiKey: "AIzaSyA3FQFrNr5W2OEVmuENqhb2MBB2JabdaOY",
+ locationColumn: "geometry",
+ map_center: [41.8781136, -87.66677856445312],
+ locationScope: "chicago"
+ });
           var autocomplete = new google.maps.places.Autocomplete(document.getElementById('search_address'));
       
           $(':checkbox').click(function(){
